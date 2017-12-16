@@ -1,12 +1,12 @@
 package packageForTests;
 
 public class FactorialTester {
-
+	
 	public static void main(String[] args) {
 		
 		for (int i = 2; i < 13; i++) // base a
 		{
-			for (int j = 1; j < factorialOf(i); j++) // exponent k
+			for (int j = 1; j < factorialOf(i); j++) // mod operand p
 			{
 				
 				if (test(i, j))
