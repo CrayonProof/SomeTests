@@ -4,11 +4,11 @@ public class DivisionTester {
 	
 	public static void main(String[] args) {
 		///*
-		for (int a = 3; a < 91; a++) // numerator a
+		for (double a = 3; a < 91; a++) // numerator a
 		{
-			for (int p = 2; p < a; p++) //mod operand
+			for (double p = 2; p < a; p++) //mod operand
 			{
-				for (int b = 3; b < 91; b++) //denominator b
+				for (double b = 3; b < 91; b++) //denominator b
 				{
 					//System.out.println("(" + a + " / " + b + ") % " + p + " = " + QuotientOf(a, b, p));
 					//System.out.println("(" + a + " % " + p + " ) " + " / (" + b + " % " + p + ")" + " = " + QuotientOfModInc(a, b, p));
@@ -18,7 +18,8 @@ public class DivisionTester {
 					}
 					else
 					{
-						System.out.println("fls : " + a + " : " + b + " : " + p);
+						double spoo = (a/ b)/p;
+						System.out.println("fls : " + a + " : " + b + " : " + p + "     " + spoo);
 						break;
 					}
 				}
@@ -29,7 +30,7 @@ public class DivisionTester {
 		//System.out.println(test(7, 4, 2));
 	}
 	
-	public static boolean test(int a, int b, int p)
+	public static boolean test(double a, double b, double p)
 	{
 		if ((QuotientOf(a, b, p)) == (QuotientOfModInc(a, b, p)))
 		{
@@ -38,13 +39,13 @@ public class DivisionTester {
 		return false;
 	}
 	
-	public static double QuotientOf(int a, int b, int p)
+	public static double QuotientOf(double a, double b, double p)
 	{
 		double spor = (a/b) %p;
 		return Math.floor(spor);
 	}
 	
-	public static double QuotientOfModInc(int a, int b, int p)
+	public static double QuotientOfModInc(double a, double b, double p)
 	{
 		if (!(((a%p) == 0) || ((b%p) == 0)))
 		{

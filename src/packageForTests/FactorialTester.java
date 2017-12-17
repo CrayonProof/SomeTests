@@ -23,6 +23,7 @@ public class FactorialTester {
 				//test(i, j);
 			}
 			System.out.println("TRUE : " + i);
+			//System.out.println(0.8 % 3);
 		}
 	}
 	
